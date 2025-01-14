@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <a href="#">
+            <img class="limonadaImg" src="logo/limonada.png" alt="limonada">
+        </a>
+
+        <div class="grid">
+            <a class="inicio" href="index.html">Início</a>
+            <a class="botoes" href="quem_somos.html">Quem Somos</a>
+            <a class="botoes" href="empreendimentos.html">Empreendimentos</a>
+            <a class="botoes" href="portifolio.html">Portifólio</a>
+            <a class="botoes" href="blog.html">Blog</a>
+            <a class="botoes" href="contato.html">Contato</a>
+            <a href="perfil.html">
+                <img class="imageUser" src="Icones/user.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="divNossosProjetos">
+        <h3 class="nossosProjetos">Contatos</h3>
+        <img class="linhaAmarelaContato" src="Icones/linhaHorizontal.png" alt="linhaHorizontal">
+    </div>
+
+    <div class="contatos">
+        <div class="divContatos">
+            <p class="enderecoAmarelo">Endereço</p>
+            <p class="enderecoVerde">Flor de Nápolis, Nº 209, CEP: 88106-020</p>
+            <p class="enderecoAmarelo">Telefone</p>
+            <p class="enderecoVerde">+55 (48) 99946-7823</p>
+            <p class="enderecoAmarelo">Email</p>
+            <p class="enderecoVerde">construtoralimonadarh@gmail.com</p>
+        </div>
+        <p class="mapinha" id="map"></p>
+    </div>
+
+    <footer class="footerAmarelo">
+        <img class="imagemFooter" src="Icones/facebook.png" alt="facebook">
+        <img class="imagemFooter" src="Icones/twitter.png" alt="twitter">
+        <img class="imagemFooter" src="Icones/youtube.png" alt="youtube">
+        <a href="https://www.instagram.com/lucas__l7/">
+            <img class="imagemFooter" src="Icones/instagram.png" alt="instagram">
+        </a>
+    </footer>
+
+    <footer class="footerVerde">Limonada Construtora / Desenvolvido por Lucas</footer>
+
+    <div class="containerImagem">
+        <a href="#">
+            <img class="canto-inferior-direito" src="Icones/setas.png" alt="Imagem">
+        </a>
+    </div>
+
+    <div class="containerImagem">
+        <img class="canto-inferior-esquerdo" src="Icones/whatsapp.png" alt="Imagem">
+    </div>
+</body>
+
+<script>
+    window.onload = function () {
+        var divSaibaMais = document.getElementById('cursorSaibaMais');
+        var imgCursor = document.querySelector('.cursor');
+
+        divSaibaMais.addEventListener('mouseover', function () {
+            imgCursor.src = 'cursor.png';
+        });
+
+        divSaibaMais.addEventListener('mouseout', function () {
+            imgCursor.src = 'cursorAmarelo.png';
+        });
+    };
+</script>
+
+<script>
+    var latitude = -27.615;
+    var longitude = -48.628;
+
+    var map = L.map('map').setView([latitude, longitude], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: ''
+    }).addTo(map);
+
+    L.marker([latitude, longitude]).addTo(map)
+        .bindPopup('Local da Loja')
+        .openPopup();
+</script>
