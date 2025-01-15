@@ -483,15 +483,20 @@ a:hover {
     .texto-sobre-imagem {
         font-size: 24px;
     }
-    .descricaoFoto, .descricaoFoto2, .descricaoFoto3, .descricaoFoto4 {
-        font-size: 11px;   
+
+    .descricaoFoto,
+    .descricaoFoto2,
+    .descricaoFoto3,
+    .descricaoFoto4 {
+        font-size: 11px;
     }
 
     .descricaoFoto4 {
         font-size: 12px;
     }
 
-    .enderecoVerde, .enderecoAmarelo {
+    .enderecoVerde,
+    .enderecoAmarelo {
         font-size: 16px;
         margin-left: 20px;
     }
@@ -500,7 +505,7 @@ a:hover {
         margin-top: 0px;
     }
 
-    .nossosProjetos{
+    .nossosProjetos {
         margin-left: 20px;
     }
 
@@ -511,4 +516,79 @@ a:hover {
 }
 
 
-@media (max-width: 600px) {}
+@media (max-width: 415px) {
+
+    .limonadaImg {
+        width: 80px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .engenheiroFoto {
+        height: auto;
+    }
+
+    .texto-sobre-imagem {
+        top: 50%;
+        font-size: 16px;
+    }
+
+    .ftEngenheiro {
+        height: 233px;
+    }
+
+    .corzinha {
+        height: 233px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+    .grid {
+        display: flex;
+        gap: 5px;
+    }
+
+    a,
+    .inicio,
+    .botoes {
+        font-size: 11px;
+        margin: 0px;
+    }
+
+    .cursorSaibaMais {
+        width: 150px;
+        height: auto;
+    }
+
+    .descricaoFoto,
+    .descricaoFoto2,
+    .descricaoFoto3,
+    .descricaoFoto4 {
+        font-size: 8px;
+    }
+
+    .descricaoFoto4 {
+        font-size: 12px;
+    }
+
+    .enderecoVerde,
+    .enderecoAmarelo {
+        font-size: 12px;
+        margin-left: 20px;
+        width: 200px;
+    }
+
+    .enderecoAmarelo {
+        margin-top: 0px;
+    }
+
+    .nossosProjetos {
+        margin-left: 20px;
+    }
+
+    #map {
+        width: 190px;
+        height: 150px;
+    }
+}
