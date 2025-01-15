@@ -1,3 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.aa {
+    width: 100px;
+    /* Ajusta a largura para 100% da tela */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    display: flex;
+    /* Utiliza flexbox para alinhar o conteúdo */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+}
+
+.limonadaImg {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
     color: rgba(255, 255, 0, 0.808);
@@ -7,11 +38,6 @@ a:hover {
     color: #019d4f;
 }
 
-.limonadaImg {
-    width: 250px;
-    height: auto;
-    margin-bottom: 10px;
-}
 
 .container {
     display: flex;
@@ -40,7 +66,8 @@ a:hover {
 }
 
 .grid {
-    margin-top: 40px;
+    margin-top: 20px;
+    width: 100%;
 }
 
 .engenheiroFoto {
@@ -134,7 +161,8 @@ a:hover {
     color: #019d4f;
     font-weight: 1000;
     font-size: 25px;
-    font-family: "Roboto", Sans-serif; /*Fonte das letras*/
+    font-family: "Roboto", Sans-serif;
+    /*Fonte das letras*/
     margin-left: 80px;
 }
 
@@ -154,14 +182,16 @@ a:hover {
 .predio3,
 .predio4 {
     background-color: #ffc100;
-    transition: transform 1s ease; /*Transição suave*/
+    transition: transform 1s ease;
+    /*Transição suave*/
 }
 
 .predio1:hover,
 .predio2:hover,
 .predio3:hover,
 .predio4:hover {
-    transform: scale(1.1); /*Coloca o zoom*/
+    transform: scale(1.1);
+    /*Coloca o zoom*/
 }
 
 .descricaoFoto,
@@ -171,7 +201,8 @@ a:hover {
     color: #019d4f;
     font-weight: 1000;
     font-size: 25px;
-    font-family: "Roboto", Sans-serif; /*Fonte das letras*/
+    font-family: "Roboto", Sans-serif;
+    /*Fonte das letras*/
     text-align: center;
     height: 3px;
 }
@@ -213,7 +244,8 @@ a:hover {
     color: #ffc100;
     font-weight: 1000;
     font-size: 25px;
-    font-family: "Roboto", Sans-serif; /*Fonte das letras*/
+    font-family: "Roboto", Sans-serif;
+    /*Fonte das letras*/
     margin-left: 80px;
     width: 370px;
     height: auto;
@@ -221,7 +253,8 @@ a:hover {
 
 .enderecoVerde {
     color: #019d4f;
-    font-family: "Roboto", Sans-serif; /*Fonte das letras*/
+    font-family: "Roboto", Sans-serif;
+    /*Fonte das letras*/
     font-weight: 1000;
     font-size: 20px;
     margin-left: 80px;
@@ -230,8 +263,8 @@ a:hover {
 }
 
 #map {
-    width: 530px; /* Defina a largura do mapa */
-    height: 300px; /* Defina a altura do mapa */
+    width: 530px;
+    height: 300px;
 }
 
 .divContatos {
@@ -244,7 +277,7 @@ a:hover {
 }
 
 .mapinha {
-    margin-left: 220px;
+    margin-left: 50px;
 }
 
 .footerVerde {
@@ -268,10 +301,6 @@ a:hover {
     margin-right: 5px;
 }
 
-.containerImagem {
-    position: relative;
-    cursor: pointer;
-}
 
 .canto-inferior-direito {
     position: fixed;
@@ -298,71 +327,188 @@ a:hover {
     height: auto;
 }
 
-/* Estilos para telas pequenas (celulares) */
-@media only screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-        margin-left: 0;
-    }
+@media (max-width: 1283px) {
+
+    a,
     .inicio,
     .botoes {
-        margin: 0;
+        font-size: 18px;
     }
-    .mapinha {
-        margin-left: 0;
-    }
-    #map {
-        width: 100%;
-    }
-    body {
-        font-size: 12px;
-    }
-}
 
-/* Estilos para telas médias (tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .imageUser {
+        width: 30px;
+    }
+
+    .limonadaImg {
+        width: 200px;
+    }
+
     .container {
         margin-left: 50px;
     }
-    .mapinha {
-        margin-left: 100px;
-    }
-    #map {
-        width: 100%;
-    }
-    body {
-        font-size: 14px;
-    }
+
 }
 
-/* Estilos para telas grandes (desktops) */
-@media only screen and (min-width: 1025px) {
-    .container {
-        margin-left: 100px;
-    }
-    .mapinha {
-        margin-left: 150px;
-    }
-    #map {
-        width: 100%;
-    }
-    body {
+@media (max-width: 1089px) {
+
+    a,
+    .inicio,
+    .botoes {
         font-size: 16px;
     }
+
+    .imageUser {
+        width: 25px;
+    }
+
+    .limonadaImg {
+        width: 150px;
+    }
+
+    .container {
+        margin-left: 40px;
+    }
+
+    .mapinha {
+        margin-left: 0px;
+    }
+
+    #map {
+        width: 450px;
+        height: 200px;
+    }
 }
 
-/* Estilos para telas extra grandes (monitores grandes) */
-@media only screen and (min-width: 1440px) {
+@media (max-width: 927px) {
+
+    a,
+    .inicio,
+    .botoes {
+        font-size: 14px;
+    }
+
+    .imageUser {
+        width: 20px;
+    }
+
     .container {
-        margin-left: 150px;
-    }
-    .mapinha {
-        margin-left: 200px;
-    }
-    #map {
+        margin-left: 30px;
         width: 100%;
     }
-    body {
-        font-size: 18px;
+
+    .mapinha {
+        margin-left: 0px;
+    }
+
+    #map {
+        width: 300px;
+        height: 150px;
+    }
+
+    .predio {
+        width: 100%;
+        height: auto;
+    }
+
+    .divPredios {
+        gap: 10px;
+    }
+
+    .divNossosProjetos {
+        margin-top: 0px;
+    }
+
+}
+
+@media (max-width: 857px) {
+
+    .limonadaImg {
+        width: 100px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    a,
+    .inicio,
+    .botoes {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .imageUser {
+        width: 15px;
+    }
+
+    .container {
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .mapinha {
+        margin-left: 0px;
+    }
+
+    #map {
+        width: 300px;
+        height: 150px;
+    }
+
+    .predio {
+        width: 100%;
+        height: auto;
+    }
+
+    .divPredios {
+        gap: 10px;
+    }
+
+    .divNossosProjetos {
+        margin-top: 0px;
     }
 }
+
+@media (max-width: 700px) {
+    .grid {
+        display: flex;
+        gap: 10px;
+    }
+
+    a,
+    .inicio,
+    .botoes {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .texto-sobre-imagem {
+        font-size: 24px;
+    }
+    .descricaoFoto, .descricaoFoto2, .descricaoFoto3, .descricaoFoto4 {
+        font-size: 11px;   
+    }
+
+    .descricaoFoto4 {
+        font-size: 12px;
+    }
+
+    .enderecoVerde, .enderecoAmarelo {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .enderecoAmarelo {
+        margin-top: 0px;
+    }
+
+    .nossosProjetos{
+        margin-left: 20px;
+    }
+
+    #map {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 600px) {}
