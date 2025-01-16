@@ -442,66 +442,82 @@ a {
     .footerAmarelo {
         width: 665px;
     }
-}
-
-@media (max-width: 546px) {
-    .limonadaImg {
-        width: 60px;
-    }
-
-    .imageUser {
-        width: 15px;
-    }
-
-    .inicio,
-    .botoes,
-    .bt_quem_somos {
-        margin-right: 5px;
-        font-size: 11px;
-    }
-
-    .engenheiroFoto {
-        width: auto;
-    }
-
-    .corzinha {
-        display: none;
-    }
-
-    .texto-sobre-imagem {
-        color: rgba(0, 0, 0, 0.751);
-    }
-
-    .footerAmarelo {
-        width: 515px;
-    }
 
     .QuemSomos {
         margin-left: 10px;
-    }
-}
-
-@media (max-width: 415px) {
-    .footerAmarelo {
-        width: 400px;
+        margin-top: 10px;
     }
 
-    .descricaoFotoMulherBeleza, .descricaoFoto {
-        margin: 0px;
-        margin-top: 20px;
+    @media (max-width: 546px) {
+        .limonadaImg {
+            width: 60px;
+        }
+
+        .imageUser {
+            width: 15px;
+        }
+
+        .inicio,
+        .botoes,
+        .bt_quem_somos {
+            margin-right: 5px;
+            font-size: 11px;
+        }
+
+        .engenheiroFoto {
+            width: auto;
+        }
+
+        .corzinha {
+            display: none;
+        }
+
+        .texto-sobre-imagem {
+            color: rgba(0, 0, 0, 0.751);
+        }
+
+        .footerAmarelo {
+            width: 515px;
+        }
+
+        .QuemSomos {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
     }
 
-    .grid, .limonadaImg, .imageUser {
-        margin: 0px;
-        font-size: 5px;
-        margin-top: 20px;
-    }
+    @media (max-width: 415px) {
+        .footerAmarelo {
+            width: 400px;
+        }
 
-    .imageUser {
-        width: 0px;
-    }
+        .descricaoFotoMulherBeleza,
+        .descricaoFoto {
+            margin: 0px;
+            margin-top: 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
 
-    .linhaAmarela, .QuemSomos {
-        margin-top: 0px;
+        .grid,
+        .limonadaImg,
+        .imageUser {
+            margin: 0px;
+            font-size: 5px;
+            margin-top: 20px;
+        }
+
+        .imageUser {
+            width: 0px;
+        }
+
+        .linhaAmarela,
+        .QuemSomos {
+            margin-top: 0px;
+        }
+
+        .QuemSomos {
+            margin-top: 10px;
+        }
     }
 }
