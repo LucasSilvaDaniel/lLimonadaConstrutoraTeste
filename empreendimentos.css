@@ -1,3 +1,10 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -53,7 +60,6 @@ a {
     font-weight: 1000;
     font-size: 25px;
     font-family: "Roboto", Sans-serif;
-    /*Fonte das letras*/
     margin-left: 80px;
 }
 
@@ -72,68 +78,56 @@ a {
     margin-right: 15px;
     background-color: #FFC100;
     transition: transform 1s ease;
-    /*Transição suave*/
     height: 400px;
 }
 
 .predio1:hover {
     transform: scale(1.1);
-    /*Coloca o zoom*/
 }
 
 .predio1:not(:hover) {
     transform: scale(1);
-    /*Tira o zoom*/
 }
 
 .predio2 {
     margin-right: 15px;
     background-color: #FFC100;
     transition: transform 1s ease;
-    /*Transição suave*/
 }
 
 .predio2:hover {
     transform: scale(1.1);
-    /*Coloca o zoom*/
 }
 
 .predio2:not(:hover) {
     transform: scale(1);
-    /*Tira o zoom*/
 }
 
 .predio3 {
     margin-right: 15px;
     background-color: #FFC100;
     transition: transform 1s ease;
-    /*Transição suave*/
 }
 
 .predio3:hover {
     transform: scale(1.1);
-    /*Coloca o zoom*/
 }
 
 .predio3:not(:hover) {
     transform: scale(1);
-    /*Tira o zoom*/
 }
 
 .predio4 {
     background-color: #FFC100;
     transition: transform 1s ease;
-    /*Transição suave*/
 }
 
 .predio4:hover {
     transform: scale(1.1);
-    /*Coloca o zoom*/
 }
 
 .predio4:not(:hover) {
     transform: scale(1);
-    /*Tira o zoom*/
 }
 
 .descricaoFoto {
@@ -141,7 +135,6 @@ a {
     font-weight: 1000;
     font-size: 25px;
     font-family: "Roboto", Sans-serif;
-    /*Fonte das letras*/
     text-align: center;
     height: 3px;
 }
@@ -151,7 +144,6 @@ a {
     font-weight: 1000;
     font-size: 25px;
     font-family: "Roboto", Sans-serif;
-    /*Fonte das letras*/
     text-align: center;
     height: 3px;
 }
@@ -218,7 +210,7 @@ a {
     background-color: #FFC100;
     padding: 16px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 100px;
 }
 
 .imagemFooter {
@@ -256,4 +248,219 @@ a {
 .centralizaTag {
     width: 120px;
     height: 66px;
+}
+
+@media (max-width: 1206px) {
+    .container {
+        margin-left: 0px;
+    }
+
+    .limonadaImg {
+        margin: 0px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1126px) {
+    .limonadaImg {
+        width: 200px;
+    }
+
+    .botoes,
+    .inicio {
+        font-size: 18px;
+    }
+
+    .imageUser {
+        width: 30px;
+    }
+}
+
+@media (max-width: 1048px) {
+    .nossosProjetos {
+        margin-left: 10px;
+        width: 100px;
+    }
+
+    .linhaAmarela {
+        margin-top: 50px;
+    }
+
+    .divNossosProjetos {
+        margin-top: 20px;
+    }
+
+    .descricaoFoto,
+    .descricaoFoto2 {
+        font-size: 18px;
+    }
+
+    .descricaoFoto4,
+    .descricaoFoto3 {
+        font-size: 16px;
+    }
+
+    .predio {
+        width: 200px;
+    }
+}
+
+@media (max-width: 935px) {
+    .limonadaImg {
+        width: 150px;
+    }
+
+    .botoes,
+    .inicio {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .imageUser {
+        width: 20px;
+    }
+}
+
+@media (max-width: 846px) {
+
+    .descricaoFoto,
+    .descricaoFoto2 {
+        font-size: 16px;
+    }
+
+    .descricaoFoto4,
+    .descricaoFoto3 {
+        font-size: 14px;
+    }
+
+    .predio {
+        width: 150px;
+    }
+
+    .botaoSaibaMais {
+        font-size: 14px;
+    }
+
+    .predio1,
+    .predio2,
+    .predio3,
+    .predio4 {
+        height: 300px;
+    }
+
+    .footerAmarelo {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 646px) {
+    .limonadaImg {
+        width: 100px;
+    }
+
+    .botoes,
+    .inicio {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .grid {
+        margin-top: 25px;
+    }
+
+    .imageUser {
+        width: 15px;
+    }
+
+    .nossosProjetos {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .divNossosProjetos {
+        margin-top: 0px;
+    }
+
+    .linhaAmarela {
+        margin-top: 40px;
+        width: 500px;
+    }
+
+    .footerAmarelo {
+        margin-top: 85px;
+    }
+
+    .divPredios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .predio {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .predio1,
+    .predio2,
+    .predio3,
+    .predio4 {
+        height: 350px;
+    }
+
+    .divPredios>div {
+        width: 250px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    @media (max-width: 505px) {
+        .limonadaImg {
+            width: 80px;
+        }
+
+        .grid {
+            margin-top: 20px;
+        }
+
+        .botoes,
+        .inicio {
+            font-size: 10px;
+        }
+
+        .imageUser {
+            width: 0px;
+        }
+
+        .divPredios {
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .predio {
+            width: 100%;
+            height: auto;
+        }
+
+        .predio1,
+        .predio2,
+        .predio3,
+        .predio4 {
+            height: auto;
+        }
+
+        .predio img {
+            width: 100%;
+            height: auto;
+        }
+
+        .predio p {
+            font-size: 14px;
+        }
+    }
 }
