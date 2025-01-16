@@ -448,6 +448,10 @@ a {
         margin-top: 10px;
     }
 
+    .texto-sobre-imagem {
+        color: transparent;
+    }
+
     @media (max-width: 546px) {
         .limonadaImg {
             width: 60px;
@@ -473,7 +477,7 @@ a {
         }
 
         .texto-sobre-imagem {
-            color: rgba(0, 0, 0, 0.751);
+            color: transparent;
         }
 
         .footerAmarelo {
@@ -508,7 +512,9 @@ a {
             margin-top: 15px;
         }
 
-        
+.texto-sobre-imagem {
+    color: transparent;
+}
 
         .imageUser {
             width: 0px;
