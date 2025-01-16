@@ -461,7 +461,7 @@ a {
         .botoes,
         .bt_quem_somos {
             margin-right: 5px;
-            font-size: 11px;
+            font-size: 10px;
         }
 
         .engenheiroFoto {
@@ -484,6 +484,7 @@ a {
             margin-left: 10px;
             margin-top: 10px;
         }
+
     }
 
     @media (max-width: 415px) {
@@ -504,8 +505,10 @@ a {
         .imageUser {
             margin: 0px;
             font-size: 5px;
-            margin-top: 20px;
+            margin-top: 15px;
         }
+
+        
 
         .imageUser {
             width: 0px;
