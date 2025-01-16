@@ -432,7 +432,6 @@ a {
 
 }
 
-
 @media (max-width: 697px) {
     .descricaoEquipe {
         width: 300px;
@@ -451,6 +450,10 @@ a {
     .texto-sobre-imagem {
         color: transparent;
     }
+    .engenheiroFoto, .ftEngenheiro {
+        display: none;
+    }
+}
 
     @media (max-width: 546px) {
         .limonadaImg {
@@ -470,6 +473,11 @@ a {
 
         .engenheiroFoto {
             width: auto;
+            display: none;
+        }
+
+        .ftEngenheiro {
+            display: none;
         }
 
         .corzinha {
@@ -488,7 +496,6 @@ a {
             margin-left: 10px;
             margin-top: 10px;
         }
-
     }
 
     @media (max-width: 415px) {
@@ -512,9 +519,9 @@ a {
             margin-top: 15px;
         }
 
-.texto-sobre-imagem {
-    color: transparent;
-}
+        .texto-sobre-imagem {
+            color: transparent;
+        }
 
         .imageUser {
             width: 0px;
@@ -528,5 +535,8 @@ a {
         .QuemSomos {
             margin-top: 10px;
         }
+
+        .engenheiroFoto, .ftEngenheiro {
+            display: none;
+        }
     }
-}
