@@ -1,3 +1,10 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -297,4 +304,204 @@ a {
     height: auto;
     cursor: pointer;
     margin-right: 270px;
+}
+
+@media (max-width: 1283px) {
+
+    .limonadaImg {
+        width: 200px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .container {
+        margin: 0px;
+    }
+
+    .inicio,
+    .botoes,
+    .bt_quem_somos {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1003px) {
+    .limonadaImg {
+        width: 150px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .imageUser {
+        width: 30px;
+    }
+
+    .imgEu {
+        width: 300px;
+    }
+
+
+    .inicio,
+    .botoes,
+    .bt_quem_somos {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 889px) {
+    .limonadaImg {
+        width: 100px;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+    .imageUser {
+        width: 25px;
+    }
+
+    .imgEu {
+        width: 200px;
+    }
+
+    .inicio,
+    .botoes,
+    .bt_quem_somos {
+        margin-right: 10px;
+    }
+
+    .inicio {
+        margin-left: 10px;
+    }
+
+    .ftDescricaoLadoLado {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .descricaoFoto {
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .imgPorDoSol,
+    .imgMulherBeleza {
+        margin: 0px;
+    }
+
+    .QuemSomos {
+        font-size: 22px;
+    }
+
+    .linhaAmarela {
+        margin-left: 0px;
+    }
+
+}
+
+@media (max-width: 723px) {
+    .limonadaImg {
+        width: 70px;
+    }
+
+    .imageUser {
+        width: 20px;
+    }
+
+    .inicio,
+    .botoes,
+    .bt_quem_somos {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .engenheiroFoto {
+        width: auto;
+    }
+
+    .corzinha {
+        display: none;
+    }
+
+    .texto-sobre-imagem {
+        color: rgba(0, 0, 0, 0.751);
+    }
+
+    .footerAmarelo {
+        width: 700px;
+    }
+
+}
+
+
+@media (max-width: 697px) {
+    .descricaoEquipe {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    .footerAmarelo {
+        width: 665px;
+    }
+}
+
+@media (max-width: 546px) {
+    .limonadaImg {
+        width: 60px;
+    }
+
+    .imageUser {
+        width: 15px;
+    }
+
+    .inicio,
+    .botoes,
+    .bt_quem_somos {
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    .engenheiroFoto {
+        width: auto;
+    }
+
+    .corzinha {
+        display: none;
+    }
+
+    .texto-sobre-imagem {
+        color: rgba(0, 0, 0, 0.751);
+    }
+
+    .footerAmarelo {
+        width: 515px;
+    }
+
+    .QuemSomos {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 415px) {
+    .footerAmarelo {
+        width: 400px;
+    }
+
+    .descricaoFotoMulherBeleza, .descricaoFoto {
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .grid, .limonadaImg, .imageUser {
+        margin: 0px;
+        font-size: 5px;
+        margin-top: 20px;
+    }
+
+    .imageUser {
+        width: 0px;
+    }
+
+    .linhaAmarela, .QuemSomos {
+        margin-top: 0px;
+    }
 }

@@ -453,6 +453,13 @@ a:hover {
         height: 150px;
     }
 
+    .descricaoFoto,
+    .descricaoFoto2,
+    .descricaoFoto3,
+    .descricaoFoto4 {
+        font-size: 13px;
+    }
+
     .predio {
         width: 100%;
         height: auto;
@@ -516,7 +523,7 @@ a:hover {
 }
 
 
-@media (max-width: 415px) {
+@media (max-width: 605px) {
 
     .limonadaImg {
         width: 80px;
@@ -531,6 +538,7 @@ a:hover {
     .texto-sobre-imagem {
         top: 50%;
         font-size: 16px;
+        color: rgba(0, 0, 0, 0.623);
     }
 
     .ftEngenheiro {
@@ -538,12 +546,13 @@ a:hover {
     }
 
     .corzinha {
-        height: 233px;
+        height: 0px;
     }
 
     .container {
         margin: 0px;
     }
+
     .grid {
         display: flex;
         gap: 5px;
