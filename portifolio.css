@@ -1,3 +1,11 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -38,8 +46,8 @@ a {
 }
 
 .imageUser {
-    width: 35px;
-    height: auto;
+    display: none;
+
 }
 
 .divNossosProjetos {
@@ -165,16 +173,16 @@ a {
     font-size: 20px;
     font-weight: 600;
     text-align: left;
-    width: 95%; 
+    width: 95%;
 }
 
 .barraPorcentagem1 {
-    float: right; 
+    float: right;
     color: white;
     font-family: "Roboto", Sans-serif;
     font-size: 20px;
     font-weight: 600;
-    text-align: right; 
+    text-align: right;
 }
 
 .ftDescricaoLadoLado {
@@ -282,4 +290,178 @@ a {
     z-index: 999;
     width: 60px;
     height: auto;
+}
+
+@media (max-width: 1181px) {
+
+    .botoes,
+    .inicio {
+        font-size: 18px;
+    }
+
+    .limonadaImg {
+        width: 200px;
+        height: auto;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .predioPortifolio2 {
+        width: 1000px;
+        height: 900px;
+        display: block;
+        margin-left: 5%;
+    }
+
+    .processoConstrucao {
+        margin-left: 26px;
+    }
+}
+
+@media (max-width: 1077px) {
+
+    .processoConstrucao {
+        margin-left: 50px;
+    }
+
+    .imgDescricao {
+        margin-left: 0px;
+    }
+
+    .imgPedreiro {
+        margin-right: 0px;
+    }
+
+    .nossosProjetos {
+        margin-left: 60px;
+    }
+
+    .container {
+        margin-left: 50px;
+    }
+
+    .botoes,
+    .inicio {
+        margin-right: 10px;
+    }
+
+    .divPredio2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .predioPortifolio2 {
+        margin-left: 0px;
+        width: 800px;
+    }
+
+    .ftDescricaoLadoLado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-sobre-imagem,
+    .processoConstrucao,
+    .titulo-sobre-imagem,
+    .texto1-sobre-imagem,
+    .texto2-sobre-imagem {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 841px) {
+    .limonadaImg {
+        width: 150px;
+        height: auto;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
+
+    .processoConstrucao {
+        margin-left: 70px;
+    }
+
+    .predioPortifolio2 {
+        width: 600px;
+        height: 600px;
+        display: block;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 741px) {
+    .limonadaImg {
+        width: 100px;
+        height: auto;
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+
+    .botoes,
+    .inicio {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .processoConstrucao {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 637px) {
+    .texto-sobre-imagem,
+    .processoConstrucao,
+    .titulo-sobre-imagem,
+    .texto1-sobre-imagem,
+    .texto2-sobre-imagem {
+        font-size: 16px;
+    }
+
+    .predioPortifolio2 {
+        width: 450px;
+        height: 450px;
+        display: block;
+        margin-left: 0px;
+    }
+
+    .botoes, .inicio {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .limonadaImg {
+        width: 100vw;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 10px;
+    }
+
+    .botoes, .inicio {
+        margin-right: 5px;
+        font-size: 13px;
+    }
+
+    .grid {
+        margin-top: 10px;
+    }
+
+    .barraPorcentagem {
+        width: 90%;
+    }
 }
