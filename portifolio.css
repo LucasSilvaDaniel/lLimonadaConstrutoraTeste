@@ -446,10 +446,7 @@ a {
     }
 
     .limonadaImg {
-        width: 100vw;
-        height: auto;
-        margin-top: 0px;
-        margin-right: 10px;
+        display: none;
     }
 
     .botoes, .inicio {
@@ -463,5 +460,13 @@ a {
 
     .barraPorcentagem {
         width: 90%;
+    }
+
+    .descricaoPedreiro, .descricaoPedreiro1 {
+        margin-left: 0px;
+    }
+
+    .nossosProjetos {
+        margin-left: 20px;
     }
 }
